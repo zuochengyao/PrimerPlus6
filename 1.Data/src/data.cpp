@@ -84,7 +84,8 @@ void float_num()
 }
 
 /*
- 程序已正常数学逻辑，结果应该是1，但程序输出是0。原因是2.34e+22f是一个小数点左边
+ 程序已正常数学逻辑，结果应该是1，但程序输出是0。
+ 原因是2.34e+22f是一个小数点左边有23位的数字，但是float类型只能表示前6或7位。
  */
 void float_add()
 {
@@ -92,4 +93,42 @@ void float_add()
     float b = a + 1.0f;
     cout << "a = " << a << endl;
     cout << "b - a = " << b - a << endl;
+}
+
+void arith()
+{
+    float hats, heads;
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout << "Enter a number: ";
+    cin >> hats;
+    cout << "Enter another number: ";
+    cin >> heads;
+    
+    cout << "hats = " << hats << "; heads = " << heads << endl;
+    cout << "hats + heads = " << hats + heads << endl;
+    cout << "hats - heads = " << hats - heads << endl;
+    cout << "hats * heads = " << hats * heads << endl;
+    cout << "hats / heads = " << hats / heads << endl;
+}
+
+void divide()
+{
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout << "Integer division: 9/5 = " << 9 / 5 << endl;
+    cout << "Floating-point division: 9.0/5.0 = " << 9.0 / 5.0 << endl;
+    cout << "Mixed division: 9.0/5 = " << 9.0 / 5 << endl;
+    cout << "double constants: 1e7/9.0 = " << 1e+7 / 9.0 << endl;
+    cout << "float constants: 1e7f/9.0f = " << 1e+7f / 9.0f << endl;
+}
+
+void mod()
+{
+    const int Lbs_per_stn = 14;
+    int lbs;
+    
+    cout << "Enter your weight in pounds: ";
+    cin >> lbs;
+    int stone = lbs / Lbs_per_stn; // whole stone
+    int pounds = lbs % Lbs_per_stn; // remainder in pounds
+    cout << lbs << " pounds are " << stone << " stone, " << pounds << " pound(s). " << endl;
 }

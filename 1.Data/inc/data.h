@@ -20,5 +20,8 @@ void more_char();
 void bondini();
 void float_num();
 void float_add();
+void arith();
+void divide();
+void mod();
 
 #endif /* data_h */
