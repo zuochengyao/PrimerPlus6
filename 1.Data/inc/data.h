@@ -23,5 +23,7 @@ void float_add();
 void arith();
 void divide();
 void mod();
+void assign();
+void type_cast();
 
 #endif /* data_h */

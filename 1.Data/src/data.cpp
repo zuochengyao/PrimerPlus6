@@ -132,3 +132,27 @@ void mod()
     int pounds = lbs % Lbs_per_stn; // remainder in pounds
     cout << lbs << " pounds are " << stone << " stone, " << pounds << " pound(s). " << endl;
 }
+
+void assign()
+{
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    float tree = 3;
+    int guess(3.9832);
+    int debt = 7.2E+12;
+    cout << "tree = " << tree << endl;
+    cout << "guess = " << guess << endl;
+    cout << "debt = " << debt << endl;
+}
+
+void type_cast()
+{
+    int auks, bats, coots;
+    auks = 19.99 + 11.99;
+    bats = (int) 19.99 + (int) 11.99;
+    coots = int (19.99) + int (11.99);
+    
+    cout << "auks = " << auks << ", bats = " << bats << ", coots = " << coots << endl;
+    char ch = 'Z';
+    cout << "The code for " << ch << " is " << int(ch) << endl;
+    cout << "Yes, the code is " << static_cast<int>(ch) << endl;
+}
