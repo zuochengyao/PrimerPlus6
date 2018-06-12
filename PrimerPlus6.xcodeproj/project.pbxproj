@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961434A520CFB1CC00180BA2 /* 2. Composite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2. Composite";
+			sourceTree = "<group>";
+		};
 		968A14ED20CE736100B50A28 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				9692720020CE75D900E5F30B /* 0.Hello */,
-				9692720620CE78C300E5F30B /* 1.Data */,
+				9692720620CE78C300E5F30B /* 1.BuiltIn */,
+				961434A520CFB1CC00180BA2 /* 2. Composite */,
 				968A14F920CE736100B50A28 /* main.cpp */,
 				968D8CF720CE7DAC00EF06CD /* main.h */,
 			);
@@ -114,13 +122,13 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		9692720620CE78C300E5F30B /* 1.Data */ = {
+		9692720620CE78C300E5F30B /* 1.BuiltIn */ = {
 			isa = PBXGroup;
 			children = (
 				968D8CFA20CF6BB300EF06CD /* inc */,
 				968D8CF220CE7C4900EF06CD /* src */,
 			);
-			path = 1.Data;
+			path = 1.BuiltIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
