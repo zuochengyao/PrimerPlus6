@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9652864720CFBDBD00785FAE /* composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9652864620CFBDBD00785FAE /* composite.cpp */; };
 		968A14FA20CE736100B50A28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968A14F920CE736100B50A28 /* main.cpp */; };
 		968D8CF620CE7CA100EF06CD /* data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968D8CF520CE7CA100EF06CD /* data.cpp */; };
 		9692720220CE76BF00E5F30B /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9692720120CE76BF00E5F30B /* hello.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9652864620CFBDBD00785FAE /* composite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = composite.cpp; sourceTree = "<group>"; };
+		9652864920CFBDD400785FAE /* composite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = composite.h; sourceTree = "<group>"; };
 		968A14F620CE736100B50A28 /* PrimerPlus6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimerPlus6; sourceTree = BUILT_PRODUCTS_DIR; };
 		968A14F920CE736100B50A28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Work/Documents/Code/C++/PrimerPlus6/main.cpp"; sourceTree = "<absolute>"; };
 		968D8CF520CE7CA100EF06CD /* data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = data.cpp; sourceTree = "<group>"; };
@@ -48,8 +51,26 @@
 		961434A520CFB1CC00180BA2 /* 2. Composite */ = {
 			isa = PBXGroup;
 			children = (
+				9652864420CFBB9700785FAE /* inc */,
+				9652864520CFBB9F00785FAE /* src */,
 			);
 			path = "2. Composite";
+			sourceTree = "<group>";
+		};
+		9652864420CFBB9700785FAE /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				9652864920CFBDD400785FAE /* composite.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		9652864520CFBB9F00785FAE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9652864620CFBDBD00785FAE /* composite.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		968A14ED20CE736100B50A28 = {
@@ -188,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9692720220CE76BF00E5F30B /* hello.cpp in Sources */,
+				9652864720CFBDBD00785FAE /* composite.cpp in Sources */,
 				968A14FA20CE736100B50A28 /* main.cpp in Sources */,
 				968D8CF620CE7CA100EF06CD /* data.cpp in Sources */,
 			);

@@ -11,5 +11,5 @@
 
 int main (int argc, const char * argv[])
 {
-    type_cast();
+    num_str();
 }

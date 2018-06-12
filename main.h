@@ -11,6 +11,6 @@
 
 #include "hello.h"
 #include "data.h"
-
+#include "composite.h"
 
 #endif /* MAIN_H */
