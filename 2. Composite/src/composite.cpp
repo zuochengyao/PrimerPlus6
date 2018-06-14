@@ -95,11 +95,109 @@ void num_str()
     cout << "What year was your house built?\n";
     int year;
     cin >> year;
-    cin.get();
+    cin.get(); // (cin >> year).get() or (cin >> year).get(ch)
     cout << "What is its street address?\n";
     char address[80];
     cin.getline(address, 80);
     cout << "Year built: " << year << endl;
     cout << "Address: " << address << endl;
     cout << "Done!\n";
+}
+
+void str_type1()
+{
+    char char_r1[20];
+    char char_r2[20] = "jaguar";
+    string str1;
+    string str2 = "panther";
+    
+    cout << "Enter a kind of feline: ";
+    cin >> char_r1;
+    cout << "Enter another kind of feline: ";
+    cin >> str1;
+    cout << "Here are some felines:\n";
+    cout << char_r1 << " " << char_r2 << " " << str1 << " " << str2 << endl;
+    cout << "The third letter in " << char_r2 << " is " << char_r2[2] << endl;
+    cout << "The third letter in " << str2 << " is " << str2[2] << endl;
+}
+
+void str_type2()
+{
+    string s1 = "penguin";
+    string s2, s3;
+    
+    cout << "You can assign one string object to another: s2 = s1\n";
+    s2 = s1;
+    cout << "s1: " << s1 << ", s2: " << s2 << endl;
+    cout << "You can assign a C-style string to a string object.\n";
+    cout << "s2 = \"buzzard\"\n";
+    s2 = "buzzard";
+    cout << "You can concatenate strings: s3 = s1 + s2\n";
+    s3 = s2 + s1;
+    cout << "s3: " << s3 << endl;
+    cout << "You can append strings.\n";
+    s1 += s2;
+    cout << "s1 += s2 yields s1 = " << s1 << endl;
+    s2 += "for a day";
+    cout << "s2 += \" for a day\" yields s2 = " << s2 << endl;
+}
+
+void str_type3()
+{
+    char char_r1[20];
+    char char_r2[20] = "jaguar";
+    string str1;
+    string str2 = "panther";
+    
+    str1 = str2; // copy str2 to str1
+    strcpy(char_r1, char_r2); // copy char_r2 to char_r1
+    str1 += " paste"; // add paste to end of str1
+    strcat(char_r1, " juice"); // add juice to end of char_r1
+    cout << "The string " << str1 << " contains " << str1.size() << " characters.\n";
+    cout << "The string " << char_r1 << " contains " << strlen(char_r1) << " characters.\n";
+}
+
+void str_type4()
+{
+    char charr[20];
+    string str;
+    // 对于未被初始化的数据，第一个空字符的出现位置是随机的，所以strlen(charr)长度可能不同
+    cout << "Length of string in charr before input: " << strlen(charr) << endl;
+    cout << "Length of string in str before input: " << str.size() << endl;
+    cout << "Enter a line of text:\n";
+    cin.getline(charr, 20);
+    cout << "You entered: " << charr << endl;
+    cout << "Enter another line of text:\n";
+    getline(cin, str);
+    cout << "You entered: " << str << endl;
+    cout << "Length of string in charr after input: " << strlen(charr) << endl;
+    cout << "Length of string in str after input: " << str.size() << endl;
+}
+
+void struct_ur()
+{
+    inflatable guest = {"Glorious Gloria", 1.88, 29.99};
+    inflatable pal = {"Audacious Arthur", 3.12, 32.99};
+    cout << "Expand your guest list with " << guest.name;
+    cout << " and " << pal.name << "!\n";
+    cout << "You can have both for $" << guest.price + pal.price << "!\n";
+}
+
+void assgn_st()
+{
+    inflatable bouquet = {"sunflowers", 0.20, 12.49};
+    inflatable choice;
+    cout << "bouquet: " << bouquet.name << " for $" << bouquet.price << endl;
+    choice = bouquet;
+    cout << "choice: " << choice.name << " for $" << choice.price << endl;
+}
+
+void struct_arr()
+{
+    inflatable guests[2] =
+    {
+        {"Glorious Gloria", 1.88, 29.99},
+        {"Audacious Arthur", 3.12, 32.99}
+    };
+    cout << "The guests " << guests[0].name << " and " << guests[1].name << "\nhave a combine volume of " << guests[0].volume + guests[1].volume << " cubic feet.\n";
 }

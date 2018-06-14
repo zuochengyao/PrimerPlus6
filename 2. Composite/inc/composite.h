@@ -10,14 +10,11 @@
 #define composite_h
 
 #include <iostream>
+#include <string>
 #include <cstring>
+#include "cpp_string.h"
+#include "cpp_array.h"
+#include "cpp_struct.h"
 using namespace std;
-
-void array_one();
-void string_char();
-void instr_1();
-void instr_2();
-void instr_3();
-void num_str();
 
 #endif /* composite_h */

@@ -28,6 +28,9 @@
 /* Begin PBXFileReference section */
 		9652864620CFBDBD00785FAE /* composite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = composite.cpp; sourceTree = "<group>"; };
 		9652864920CFBDD400785FAE /* composite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = composite.h; sourceTree = "<group>"; };
+		9652864A20D249C100785FAE /* cpp_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_string.h; sourceTree = "<group>"; };
+		9652864B20D249D500785FAE /* cpp_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_array.h; sourceTree = "<group>"; };
+		9652864C20D24A8800785FAE /* cpp_struct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_struct.h; sourceTree = "<group>"; };
 		968A14F620CE736100B50A28 /* PrimerPlus6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimerPlus6; sourceTree = BUILT_PRODUCTS_DIR; };
 		968A14F920CE736100B50A28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Work/Documents/Code/C++/PrimerPlus6/main.cpp"; sourceTree = "<absolute>"; };
 		968D8CF520CE7CA100EF06CD /* data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = data.cpp; sourceTree = "<group>"; };
@@ -61,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				9652864920CFBDD400785FAE /* composite.h */,
+				9652864B20D249D500785FAE /* cpp_array.h */,
+				9652864A20D249C100785FAE /* cpp_string.h */,
+				9652864C20D24A8800785FAE /* cpp_struct.h */,
 			);
 			path = inc;
 			sourceTree = "<group>";
