@@ -15,6 +15,7 @@
 #include "cpp_string.h"
 #include "cpp_array.h"
 #include "cpp_struct.h"
+#include "cpp_pointer.h"
 using namespace std;
 
 #endif /* composite_h */

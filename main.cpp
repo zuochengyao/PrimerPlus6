@@ -6,10 +6,9 @@
 //  Copyright © 2018年 Cheero. All rights reserved.
 //
 
-
 #include "main.h"
 
 int main (int argc, const char * argv[])
 {
-    struct_arr();
+    ptrstr();
 }

@@ -26,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		961FC48B20DA4D20005BE189 /* cpp_enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_enum.h; sourceTree = "<group>"; };
+		961FC48C20DA50B6005BE189 /* cpp_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_pointer.h; sourceTree = "<group>"; };
 		9652864620CFBDBD00785FAE /* composite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = composite.cpp; sourceTree = "<group>"; };
 		9652864920CFBDD400785FAE /* composite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = composite.h; sourceTree = "<group>"; };
 		9652864A20D249C100785FAE /* cpp_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_string.h; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 				9652864B20D249D500785FAE /* cpp_array.h */,
 				9652864A20D249C100785FAE /* cpp_string.h */,
 				9652864C20D24A8800785FAE /* cpp_struct.h */,
+				961FC48B20DA4D20005BE189 /* cpp_enum.h */,
+				961FC48C20DA50B6005BE189 /* cpp_pointer.h */,
 			);
 			path = inc;
 			sourceTree = "<group>";

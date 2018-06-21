@@ -201,3 +201,106 @@ void struct_arr()
     };
     cout << "The guests " << guests[0].name << " and " << guests[1].name << "\nhave a combine volume of " << guests[0].volume + guests[1].volume << " cubic feet.\n";
 }
+
+void get_addr()
+{
+    int donuts = 6;
+    double cups = 4.5;
+    cout << "donuts value = " << donuts << " and donuts address = " << &donuts << endl;
+    cout << "cups value = " << cups << " and cups address = " << &cups << endl;
+}
+
+void pointer()
+{
+    int updates = 6;
+    int *p_updates = &updates;
+    
+    cout << "Values: updates = " << updates << ", *p_updates = " << *p_updates << endl;
+    cout << "Address: &updates = " << &updates << ", p_updates = " << p_updates << endl;
+    *p_updates = *p_updates + 1;
+    cout << "Now updates = " << updates << endl;
+}
+
+void use_new()
+{
+    int nights  = 1001;
+    int *pt = new int;
+    *pt = 1001;
+    
+    cout << "nights value = " << nights << ": location " << &nights << endl;
+    cout << "int value = " << *pt << ": location = " << pt << endl;
+    double *pd = new double;
+    *pd = 10000001.0;
+    cout << "double value = " << *pd << ": location = " << pd << endl;
+    cout << "location of pointer pd: " << &pd << endl;
+    cout << "size of pt = " << sizeof(pt) << ": size of *pt = " << sizeof(*pt) << endl;
+    cout << "size of pd = " << sizeof(pd) << ": size of *pd = " << sizeof(*pd) << endl;
+    delete pt;
+    delete pd;
+    int *psome = new int[10];
+    delete []psome;
+}
+
+void point_array()
+{
+    double *p = new double[3];
+    p[0] = 0.2;
+    p[1] = 0.5;
+    p[2] = 0.8;
+    cout << "p[1] is " << p[1] << endl;
+    p += 1;
+    cout << "Now p[0] is " << p[0] << " and " << "p[1] is " << p[1] << endl;
+    cout << "p[2] = " << p[2] << endl;
+    p -= 1;
+    cout << "p[0] = " << p[0] << endl;
+    delete []p;
+}
+
+void addpntrs()
+{
+    double wages[3] = {10000.0, 20000.0, 30000.0};
+    short stacks[3] = {3, 2, 1};
+    double *pw = wages;
+    short *ps = &stacks[0];
+    
+    cout << "pw = " << pw << ", *pw = " << *pw << endl;
+    cout << "&wages = " << &wages << ", wages = " << wages[0] << endl;
+    pw += 1;
+    cout << "add 1 to the pw pointer:\n";
+    cout << "pw = " << pw << ", *pw = " << *pw << "\n\n";
+    
+    cout << "ps = " << ps << ", *ps = " << *ps << endl;
+    ps += 1;
+    cout << "add 1 to the ps pointer:\n";
+    cout << "ps = " << ps << ", *ps = " << *ps << "\n\n";
+    
+    cout << "access two elements with array notation\n";
+    cout << "stacks[0] = " << stacks[0] << ", stacks[1] = " << stacks[1] << endl;
+    cout << "access two elements with pointer notation\n";
+    cout << "*stacks = " << *stacks << ", *(stacks + 1) = " << *(stacks + 1) << endl;
+    cout << sizeof wages << " = sizeof wages array\n";
+    cout << sizeof(pw) << " = sizeof pw pointer\n";
+}
+
+void ptrstr()
+{
+    char animal[20] = "bear";
+    const char *bird = "wren";
+    char *ps;
+    
+    cout << animal << " and " << bird << endl;
+    cout << "Enter a kind of animal: ";
+    cin >> animal;
+    ps = animal;
+    cout << ps << "!\n";
+    cout << "Before using strcpy():\n";
+    cout << animal << " at " << (int *) animal << endl;
+    cout << ps << " at " << (int *) ps << endl;
+    
+    ps = new char[strlen(animal) + 1];
+    strcpy(ps, animal);
+    cout << "After using strcpy():\n";
+    cout << animal << " at " << (int *) animal << endl;
+    cout << ps << "at " << (int *) ps << endl;
+    delete []ps;
+}
