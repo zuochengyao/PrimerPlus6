@@ -10,5 +10,16 @@
 
 int main (int argc, const char * argv[])
 {
-    ptrstr();
+    choices();
+}
+
+void get_name()
+{
+    char *name = getname();
+    cout << name << " at " << (int*) name << endl;
+    delete [] name;
+    
+    name = getname();
+    cout << name << " at " << (int*) name << endl;
+    delete [] name;
 }

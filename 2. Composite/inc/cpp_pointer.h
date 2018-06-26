@@ -15,5 +15,8 @@ void use_new();
 void point_array();
 void addpntrs();
 void ptrstr();
+void new_strct();
+char *getname();
+void mixtypes();
 
 #endif /* cpp_pointer_h */

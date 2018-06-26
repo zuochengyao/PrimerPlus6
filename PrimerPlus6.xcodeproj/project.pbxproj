@@ -40,6 +40,7 @@
 		968D8CF920CF6B9200EF06CD /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
 		968D8CFB20CF6BC700EF06CD /* data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
 		9692720120CE76BF00E5F30B /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
+		96CD9F9B20E1DAD0000F53A7 /* cpp_collection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpp_collection.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 				9652864C20D24A8800785FAE /* cpp_struct.h */,
 				961FC48B20DA4D20005BE189 /* cpp_enum.h */,
 				961FC48C20DA50B6005BE189 /* cpp_pointer.h */,
+				96CD9F9B20E1DAD0000F53A7 /* cpp_collection.h */,
 			);
 			path = inc;
 			sourceTree = "<group>";

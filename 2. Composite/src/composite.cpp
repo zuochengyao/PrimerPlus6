@@ -304,3 +304,72 @@ void ptrstr()
     cout << ps << "at " << (int *) ps << endl;
     delete []ps;
 }
+
+void new_strct()
+{
+    inflatable *ps = new inflatable;
+    cout << "Enter name of inflatable item: ";
+    cin.get(ps->name, 20);
+    cout << "Enter volume in cubic feet: ";
+    cin >> (*ps).volume;
+    cout << "Enter price: $";
+    cin >> ps->price;
+    cout << "Name: " << (*ps).name << endl;
+    cout << "Volume: " << ps->volume << "cubic feet\n";
+    cout << "Price: $" << ps->price << endl;
+    delete ps;
+}
+
+char *getname()
+{
+    char tmp[20];
+    cout << "Enter last name: ";
+    cin >> tmp;
+    char *pn = new char[strlen(tmp) + 1];
+    strcpy(pn, tmp);
+    return pn;
+}
+
+void mixtypes()
+{
+    antarctica_years_end s1, s2, s3;
+    s1.year = 1998;
+    antarctica_years_end *pa = &s2;
+    pa->year = 1999;
+    antarctica_years_end trio[3];
+    trio[0].year = 2003;
+    cout << trio->year << endl;
+    const antarctica_years_end *arp[3] = {&s1, &s2, &s3};
+    cout << arp[1]->year << endl;
+    const antarctica_years_end **ppa = arp;
+    auto ppb = arp;
+    cout << (*ppa)->year << endl;
+    cout << (*(ppb + 1))->year << endl;
+}
+
+void choices()
+{
+    double a1[4] = {1.2, 2.1, 3.4, 4.7};
+    // C++98
+    vector<double> a2(4);
+    a2[0] = 1.0/3.0;
+    a2[1] = 1.0/3.0;
+    a2[2] = 1.0/3.0;
+    a2[3] = 1.0/3.0;
+    // C++11
+    array<double, 4> a3 = {3.5, 1.3, 5.6, 8.8};
+    array<double, 4> a4 = a3;
+    
+    cout << "a1[2]: " << a1[2] << " at " << &a1[2] << endl;
+    cout << "a2[2]: " << a2[2] << " at " << &a2[2] << endl;
+    cout << "a3[2]: " << a3[2] << " at " << &a3[2] << endl;
+    cout << "a4[2]: " << a4[2] << " at " << &a4[2] << endl;
+    
+    a1[-2] = 20.2;
+    a1[-1] = 10.2;
+    cout << "a1[-2]: " << a1[-2] << " at " << &a1[-2] << endl;
+    cout << "a1[-1]: " << a1[-1] << " at " << &a1[-1] << endl;
+    cout << "a1[0]: " << a1[0] << " at " << &a1[0] << endl;
+    cout << "a3[2]: " << a3[2] << " at " << &a3[2] << endl;
+    cout << "a4[2]: " << a4[2] << " at " << &a4[2] << endl;
+}

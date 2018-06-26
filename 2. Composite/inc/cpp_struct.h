@@ -27,6 +27,11 @@ struct widget
     } id_val;
 };
 
+struct antarctica_years_end
+{
+    int year;
+};
+
 void struct_ur();
 void assgn_st();
 void struct_arr();

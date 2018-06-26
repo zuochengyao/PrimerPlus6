@@ -13,4 +13,6 @@
 #include "data.h"
 #include "composite.h"
 
+void get_name();
+
 #endif /* MAIN_H */

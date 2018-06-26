@@ -12,10 +12,13 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <vector>
+#include <array>
 #include "cpp_string.h"
 #include "cpp_array.h"
 #include "cpp_struct.h"
 #include "cpp_pointer.h"
+#include "cpp_collection.h"
 using namespace std;
 
 #endif /* composite_h */
